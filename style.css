@@ -1,0 +1,398 @@
+@font-face {
+  font-family: epilogue;
+  src: url(Epilogue/epilogue.light.ttf);
+}
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: epilogue;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  /* background: red; */
+}
+#page1 {
+  height: 100%;
+  width: 100%;
+  /* background: rgb(0, 255, 0); */
+}
+#page1 #nav {
+  height: 10%;
+  width: 100%;
+  background-color: #edebe3;
+  display: flex;
+  /* justify-content: space-between; */
+  padding: 0 30px;
+  border-bottom: 1px solid black;
+}
+#page1 #nav #nav1 {
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  /* font-family: epilogue; */
+  font-weight: 400;
+}
+#page1 #nav #nav2 {
+  height: 100%;
+  /* background-color: blue; */
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 23px 0px;
+  margin-left: 42%;
+}
+#page1 #nav #nav3 {
+  height: 100%;
+  /* background-color: rgb(255, 0, 251); */
+  display: flex;
+  align-items: flex-end;
+  font-size: 25px;
+  padding: 23px 0px;
+  margin-left: 22%;
+}
+
+#page1 #center {
+  position: relative;
+  background-color: aqua;
+  height: calc(100% - 10%);
+  width: 100%;
+}
+#page1 #center #bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#page1 #center #center {
+  position: absolute;
+  top: 7%;
+  left: 40%;
+  height: 67%;
+  width: 18%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+#page1 #center #scroller {
+  background-color: #d66f46;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-bottom: 1px solid black;
+}
+#page1 #center #scroller p {
+  /* background-color: red; */
+  display: inline-block;
+  padding: 25px 0px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: epilogue;
+  font-weight: 500;
+  animation-name: scroll;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 14px));
+  }
+}
+
+#page2 {
+  background-color: #edebe3;
+  height: 43%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+#page2 #box1 {
+  /* background-color: red; */
+  height: 100%;
+  width: 20%;
+}
+#page2 #box1 p {
+  padding: 12% 8%;
+  font-size: 15px;
+  font-weight: 500;
+}
+#page2 #box2 {
+  position: relative;
+  /* background-color: rgb(15, 133, 224); */
+  height: 100%;
+  width: 55%;
+}
+#page2 #box2 p {
+  padding: 4%;
+  font-size: 33px;
+}
+#page2 #box3 {
+  /* background-color: rgb(85, 243, 6); */
+  height: 100%;
+  width: 25%;
+  position: relative;
+  border-left: 1px solid black;
+}
+#page2 #box3 img {
+  height: 55%;
+  width: 55%;
+  position: absolute;
+  top: 35px;
+  left: 25%;
+}
+#page2 #box3 p {
+  position: absolute;
+  bottom: 15%;
+  left: 30%;
+  text-align: center;
+  font-size: 13px;
+}
+
+.seperation {
+  background-color: #edebe3;
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 22px;
+  font-size: 23px;
+}
+
+#page3 {
+  background-color: #edebe3;
+  height: 70%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+#page3 .box {
+  /* background-color: red; */
+  height: 100%;
+  width: 25%;
+  border-left: 1px solid black;
+}
+#page3 .box .image1 {
+  /* background-color: red; */
+  background-image: url(https://harinaentrepiedras.com/wp-content/uploads/2021/05/ep_5kg_eco_trigo_integral_completo-1920x2351.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin-top: -20px;
+}
+#page3 .box .image2 {
+  /* background-color: red; */
+  background-image: url(https://harinaentrepiedras.com/wp-content/uploads/2021/06/ep_5kg_selecta_gran_fuerza_00-1920x2351-1.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin-top: -20px;
+}
+#page3 .box .image3 {
+  /* background-color: red; */
+  background-image: url(https://harinaentrepiedras.com/wp-content/uploads/2021/06/ep_5kg_selecta_gran_fuerza_00-1920x2351-1.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin-top: -20px;
+}
+#page3 .box .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: -30px;
+}
+
+#page3 .box:hover .image1 {
+  background-image: url(https://harinaentrepiedras.com/wp-content/uploads/2021/04/ep_pan_hogaza_integral.png);
+}
+#page3 .box:hover .image2 {
+  background-image: url(https://harinaentrepiedras.com/wp-content/uploads/2021/06/ep_pan_viena.png);
+}
+#page3 .box:hover .image3 {
+  background-image: url(https://harinaentrepiedras.com/wp-content/uploads/2021/04/ep_pan_frances.png);
+}
+#page3 .box:hover .text p:nth-child(1) {
+  color: #d67047;
+}
+
+#page4 {
+  background-color: #edebe3;
+  height: 70%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+#page4 #left {
+  background-image: url(https://harinaentrepiedras.com/wp-content/uploads/2022/10/img_0741-scaled-e1665061266975.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+  border-right: 1px solid black;
+}
+
+#page4 .text {
+  display: none;
+  color: white;
+  margin: 20px;
+}
+#page4 .text h3 {
+  font-weight: 100;
+}
+#page4 .text h1 {
+  font-style: italic;
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+#page4 #left:hover {
+  background-color: #d66f46;
+  background-image: none;
+  transition: all ease 1s;
+}
+#page4 #left:hover .text {
+  display: block;
+}
+
+#page4 #right {
+  background-image: url(https://harinaentrepiedras.com/wp-content/uploads/2022/10/alex-lvrs-ffqsz3eug0u-unsplash-scaled-e1666174216853.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 50%;
+}
+#page4 #right:hover {
+  background-color: #d66f46;
+  background-image: none;
+  transition: all ease 1s;
+}
+#page4 #right:hover .text {
+  display: block;
+}
+
+#info {
+  background-color: #edebe3;
+  height: 18%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+#info .box {
+  height: 100%;
+  width: 25%;
+  border-right: 1px solid black;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 50px 65px;
+}
+#info .box:nth-child(4) {
+  padding: 50px 40px;
+}
+#info .box:hover {
+  background-color: #d66f46;
+  color: white;
+  transition: all ease 1s;
+}
+
+#footer {
+  position: relative;
+  background-color: #edebe3;
+  height: 40%;
+  width: 100%;
+}
+
+#footer #content {
+  height: 85%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+#footer #content #box1 {
+  height: 100%;
+  width: 50%;
+  border-right: 1px solid black;
+}
+#footer #content #box1 p {
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+#footer #content #box1 #email {
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 25%;
+  height: 30px;
+  width: 50%;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+}
+#footer #content #box1 button {
+  font-size: 15px;
+  margin-top: 20px;
+  margin-left: 25%;
+  height: 40px;
+  width: 50%;
+  text-align: center;
+  color: white;
+  background-color: #85847f;
+  border: none;
+}
+#footer #content #box1 #radio {
+  margin-top: 15px;
+  margin-left: 25%;
+  background-color: #edebe3;
+}
+#footer #content #box1 label {
+  font-size: 10px;
+}
+#footer #content #box2 {
+  height: 100%;
+  width: 25%;
+  border-right: 1px solid black;
+  /* background-color: red; */
+}
+#footer #content #box2 p {
+  margin: 30px 30px;
+  line-height: 0px;
+  font-size: 13px;
+}
+#footer #content #box3 {
+  height: 100%;
+  width: 25%;
+  border-right: 1px solid black;
+}
+#footer #content #box3 p {
+  margin: 30px 30px;
+  line-height: 0px;
+  font-size: 13px;
+}
+#footer #content #box3 #images {
+  margin-left: 30px;
+}
+#footer span {
+  position: absolute;
+  bottom: 15px;
+  left: 35%;
+  font-size: 10px;
+}
